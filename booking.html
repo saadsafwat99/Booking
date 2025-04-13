@@ -6,30 +6,32 @@
     <link rel="stylesheet" type="text/css" href="./booking.css">
     <title>Booking</title>
 </head>
-<body>
+<body >
+    <div class="nav">
+        <a href="#">Home</a>
+        <a href="#">Menu</a>
+        <a href="#">About</a>
+        <a href="#">Admin</a>
+    </div>
     <div class="booking">
         <div class="booking-text">
             <h1>Book Your Table</h1>
             <form id="booking-form">
-
                 <div class="form-group">
                     <label for="name">Full Name :</label>
                     <input type="text" id="name" placeholder="Enter full name" required>
                 </div>
                 <br><br>
-
                 <div class="form-group">
                     <label for="number-guest">Number-guest :</label>
                     <input type="number" id="number-guest" min="1" placeholder="Number of guest" required>
                 </div>
                 <br><br>
-
                 <div class="form-group">
                     <label for="phone">Phone number :</label>
                     <input type="tel" id="phone" placeholder="Enter phone number" required>
                 </div>
                 <br><br>
-
                 <div class="form-group">
                     <label for="meal">Choose meal :</label>
                     <select id="meal">
@@ -39,7 +41,6 @@
                     </select>
                 </div>
                 <br><br>
-
                 <div class="form-group">
                     <label for="date">Date :</label>
                     <input type="date" id="date" required>
@@ -50,16 +51,16 @@
                     <input type="time" id="time" required>
                 </div>    
                 <br><br>
-                
-                <button type="submit" >Book Now</button>
-
+                <button class="b" type="submit" >Book Now</button>
             </form>
-
                 <span id="confirm-message"></span>
-
         </div>
     </div>
+    </div>
+</div>
 
 <script src="./booking.js"></script>
 </body>
 </html>
+
+

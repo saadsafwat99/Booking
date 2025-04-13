@@ -23,13 +23,13 @@ document.addEventListener("DOMContentLoaded", function () {
             meal: meal
         };
 
-        // استرجاع الحجوزات السابقة من localStorage
+        //  localStorage الحجوزات السابقة من git 
         let bookings = JSON.parse(localStorage.getItem("bookings")) || [];
 
-        // إضافة الحجز الجديد إلى المصفوفة
+        // اضافة الحجز الجديد  
         bookings.push(newBooking);
 
-        // تخزين المصفوفة الجديدة في localStorage
+        // localStorage الجديد في booking تخزين   
         localStorage.setItem("bookings", JSON.stringify(bookings));
 
         let confirmMessage = document.getElementById("confirm-message");
